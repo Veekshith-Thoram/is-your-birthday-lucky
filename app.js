@@ -6,6 +6,7 @@ const outputText = document.querySelector("#output-text");
 function checkBirthDateIsLucky(){
     const dob = dateOfBirth.value;
     const sum = calculateSum(dob);
+    if(dob&&luckyNumber.value)
         compareValues(sum,luckyNumber.value);
     else
         outputText.innerText = "Please enter both the fields!!😠😠"
